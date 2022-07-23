@@ -40,13 +40,12 @@ client.on('interactionCreate', async (interaction) => {
             .setThumbnail('https://www.videogameschronicle.com/files/2021/05/discord-new-logo.jpg')
 
         // check button clicked by customID
-        if (commandName == 'Join') {
+        if (commandName == 'JoinMyBass') {
 
             Embed.setColor('#F9D7D3')
-            Embed.setTitle('Cake')
-            Embed.setDescription('You are now a Cakeist!')
-            Embed.setThumbnail('https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80')
-            member.roles.add(cakeRole)
+            Embed.setTitle('MyBass')
+            Embed.setDescription('You can now access the MyBass area :)')
+            member.roles.add(BassRole)
             return interaction.reply({
                 //content: 'You are now a Cakeist!',
                 ephemeral: true,
